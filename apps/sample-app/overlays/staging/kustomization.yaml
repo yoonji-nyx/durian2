@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: staging
+resources:
+  - ../../base
+# CI(release.yml)가 이 images 항목의 newTag를 커밋으로 갱신합니다.
+# 지금은 첫 Release에서 만들어진 태그(커밋 SHA 앞 7자리)를 수동으로 넣어 두었습니다.
+images:
+  - name: app
+    newName: ghcr.io/jaewoo2580/ktcloud_durian
+    newTag: 10c0ba5

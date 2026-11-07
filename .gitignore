@@ -1,0 +1,7 @@
+*.pem
+*.key
+.env
+.env.*
+secret*.yaml
+!secret*.example.yaml
+.DS_Store
