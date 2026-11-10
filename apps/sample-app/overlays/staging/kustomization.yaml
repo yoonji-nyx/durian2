@@ -8,4 +8,4 @@ resources:
 images:
   - name: app
     newName: ghcr.io/jaewoo2580/ktcloud_durian
-    newTag: 10c0ba5
+    newTag: 2b09241
